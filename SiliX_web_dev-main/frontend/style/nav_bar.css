@@ -1,0 +1,77 @@
+/* nav_bar.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, a, div, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light purple background color */
+}
+
+/* Header styling */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Logo styling */
+.logo a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* Pushes nav-links to the right */
+    margin-right: 2%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #4b0082; /* Indigo background on hover */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Profile icon styling */
+.profile a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

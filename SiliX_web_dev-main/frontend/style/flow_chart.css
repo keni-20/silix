@@ -1,0 +1,113 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6fa; /* Light purple background */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to the bottom */
+}
+
+.header {
+    background-color: #563d7c; /* Purple header background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content{
+    display: flex;
+    justify-content: center; /* Horizontally centers the container */
+}
+
+.container_main {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensure the container is a column flexbox */
+    margin-top: 20px; /* Adjust margin to create space below the navigation bar */
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Ensure the form is a column flexbox */
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.option-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: stretch; /* Ensure items stretch to fill the container height */
+    margin-bottom: 20px;
+}
+
+.option-box {
+    background-color: #f8f8ff; /* Slightly lighter purple for option boxes */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 45%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.example-code {
+    background-color: #f0f0f5;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Ensure the example code area takes up remaining space */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin above the submit button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    text-align: left;
+    white-space: pre-wrap; /* Ensures the output respects whitespace formatting */
+}

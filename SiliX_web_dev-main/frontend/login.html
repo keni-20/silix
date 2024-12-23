@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Enter Your Email ID</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Enter Your Password</label>
+                </div>
+                <button type="submit">Submit</button>
+                <div class="or">OR</div>
+                <div class="google-login">
+                    <a href="#" id="google-login">Login with Google <i class="fab fa-google"></i></a>
+                </div>
+                <div class="signup-link">
+                    <p>Are you registered? <a href="signup.html">Sign UP</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="script/firebase.js"></script>
+    <script type="module" src="script/login.js"></script>
+</body>
+</html>
